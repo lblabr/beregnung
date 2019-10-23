@@ -4014,6 +4014,57 @@
 
 // -----------------------------------------------------------------------------
 
+#elif defined(BEREGNUNG)
+
+    // Info
+    #define MANUFACTURER        "WEMOS"
+    #define DEVICE              "D1_MINI_BEREGNUNG"
+
+    // Disable non-core modules
+    #define ALEXA_SUPPORT           0
+    #define BROKER_SUPPORT          0
+    #define BUTTON_SUPPORT          0
+    #define DOMOTICZ_SUPPORT        0
+    #define HOMEASSISTANT_SUPPORT   0
+    #define I2C_SUPPORT             0
+    #define MDNS_SERVER_SUPPORT     0
+    #define MQTT_SUPPORT            1
+    #define NTP_SUPPORT             1
+    #define SCHEDULER_SUPPORT       1
+    #define SENSOR_SUPPORT          1
+    #define THINGSPEAK_SUPPORT      0
+    #define WEB_SUPPORT             1
+
+    // Extra light-weight image
+    #define DEBUG_SERIAL_SUPPORT    0
+    #define DEBUG_TELNET_SUPPORT    0
+    #define DEBUG_WEB_SUPPORT       1
+    #define LED_SUPPORT             0
+    #define TELNET_SUPPORT          0
+    #define TERMINAL_SUPPORT        1	
+	
+    #define RELAY1_PIN          2 //D4
+    #define RELAY1_TYPE         RELAY_TYPE_INVERSE
+    #define RELAY2_PIN          0 //D3
+    #define RELAY2_TYPE         RELAY_TYPE_INVERSE
+    #define RELAY3_PIN          4 //D2
+    #define RELAY3_TYPE         RELAY_TYPE_INVERSE
+    #define RELAY4_PIN          5 //D1
+    #define RELAY4_TYPE         RELAY_TYPE_INVERSE
+	
+//    #define I2C_SDA_PIN         12  // D6
+//    #define I2C_SCL_PIN         14  // D5
+
+//	#define INCLUDE_BEREGNUNG_LOGIK 	1
+//	#define USE_EXTRA           		1
+	
+	//* Plugin integation point
+//	#if defined(USE_EXTRA)
+		//* Declare espurna calling function
+//		void _beregnungLogik_extraSetup();
+//	#endif	
+
+	
 #else
 
     #error "UNSUPPORTED HARDWARE!!"
