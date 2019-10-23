@@ -19,6 +19,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
 
+#define BEREGNUNG
+
 #include "config/all.h"
 #include <vector>
 

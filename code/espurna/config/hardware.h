@@ -4051,6 +4051,9 @@
     #define RELAY3_TYPE         RELAY_TYPE_INVERSE
     #define RELAY4_PIN          5 //D1
     #define RELAY4_TYPE         RELAY_TYPE_INVERSE
+
+	#define ANALOG_SUPPORT 			1
+	#define ADC_VCC_ENABLED			0
 	
 //    #define I2C_SDA_PIN         12  // D6
 //    #define I2C_SCL_PIN         14  // D5
